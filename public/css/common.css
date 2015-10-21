@@ -1,0 +1,332 @@
+#pagewidth{margin:0 auto; padding:0 5px; width:980px; background:#fff url(../images/bg_pagewidth.gif) repeat-y center top}
+.ClearBoth{clear:both}
+.FloatLeft{float:left}
+.FloatRight{float:right}
+.sprite{background:url(../images/sprite.gif) no-repeat 0 0}
+.bg{background:url(../images/bg.gif) repeat-x 0 0}
+.ColorLogo{color:#125890}
+.ColorRed{color:#ff0000}
+.textUppercase{text-transform:uppercase}
+.linkBlack, linkBlack:visited{color:#000}
+/*-----header----*/
+.top{background:url(../images/bg.gif) repeat-x left top; height:39px;}
+.top .linktop{line-height:39px; color:#505050; text-transform:uppercase; height:39px}
+.top .linktop a, .top .linktop a:visited{color:#505050; padding:0 10px}
+.top .searchTop{height:34px; padding-top:5px}
+.boxST {margin:0 15px; float:left; height:30px; background:url(../images/bg.gif) repeat-x left -43px; overflow:hidden}
+.boxST .left{background-position:0 0; width:8px; height:30px; float:left}
+.boxST .right{background-position:-11px 0; width:7px; height:30px; float:right}
+.boxST .center{height:30px; line-height:30px;}
+.input_searchTop{color:#505050; font-family:Tahoma; margin:0; border:none; padding:2px 5px; width:200px;}
+.buttonSearchTop{background-position:-113px 0; width:19px; height:16px; margin:0; padding:0; border:none; cursor:pointer;}
+.img-Flags img{margin:0 5px}
+/*banner*/
+.banner{padding:15px 10px;}
+.boxCallUs{background:url(../images/img_07.jpg) no-repeat right top; padding-right:90px; border-bottom:1px solid #d5d5d5; height:90px}
+.boxCallUs table td{font-family:Tahoma; line-height:16px}
+.font11px{font-size:11px}
+.font13px{font-size:13px}
+/*NavTop*/
+.NavTop .left{background-position:-84px 0; width:7px; height:44px; float:left}
+.NavTop .right{background-position:-96px 0; width:7px; height:44px; float:right}
+.NavTop .center{height:44px; line-height:44px}
+.menutop li{float:left; height:44px}
+.menutop li a{color:#fff; font-family:Century Gothic; font-size:13px; text-transform:uppercase; padding:0 15px}
+.menutop li a, .menutop li a:visited{color:#fff;}
+.menutop li a:hover{color:#ffd200; text-decoration:none}
+/*-----center-----*/
+#center{padding:15px 10px; width:960px}
+#maincol{width:657px; float:left; display:block; margin-right:10px}
+#rightcol{width:293px; float:left; display:block;}
+/*---maincol---*/
+/*ToursImage*/
+.CountryImage{position:relative; height:143px; width:213px; float:left; margin:0 2px 8px 2px;}
+.setImage{width:213px; height:143px;}
+.TitleBigImage{background:#fff; position:absolute; width:193px; bottom:0; right:0; padding:0 10px; text-transform:uppercase; color:#fff; font:normal 14px/30px Century Gothic; line-height:30px; text-align:right}
+.TitleBigImage{filter: alpha(opacity=30); filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30); -moz-opacity: 0.30; opacity:0.3;}
+#words{position:absolute; background:transparent; bottom:0; width:193px; right:0; padding:0 10px; text-transform:uppercase; color:#fff; font:normal 14px/30px Century Gothic; line-height:30px; text-align:right}
+.NoMargin{margin:0}
+/*group*/
+.group{margin-top:9px}
+.TopDestinations{float:left; width:435px; display:block; background:url(../images/TopDestinations_bg.gif) no-repeat left bottom; padding-bottom:6px}
+.adverting{float:right; width:213px}
+/*hd*/
+.hdBlue{background:#11568d; height:33px;}
+.hdBlue .left{background-position:-30px 0; height:33px; width:7px; float:left}
+.hdBlue .right{background-position:-42px 0; height:33px; width:7px; float:right}
+.hdBlue .center{height:33px; line-height:33px; float:left; }
+.hdBlue .center span{text-transform:uppercase; color:#fff; font:normal 13px Tahoma; padding-left:5px; background:url(../images/icon/arrow_blue.gif) no-repeat center bottom; display:inline-block; height:33px; line-height:33px}
+.bdBlue{border-left:1px solid #f2f2f2; border-right:1px solid #f2f2f2; padding:8px 10px 2px 10px; height:100%}
+.colItem{float:left; width:82px; float:left; text-align:center; padding:15px 10px}
+.colItem img{width:82px; height:82px; margin-bottom:2px;}
+.linkRed{font-size:11px; color:#7a0204;}
+/*boxBlue*/
+.boxBlue{margin-top:17px; background:url(../images/boxBlue_bottom.gif) no-repeat left bottom; padding-bottom:5px}
+.table1{padding:9px 0}
+.table1 td{background:url(../images/bg_tdTable1.gif) repeat; padding:10px; font-size:11px; border:1px solid #f8f8f8;}
+.paddingBottom{padding-bottom:6px}
+.more a, more a:visited{color:#086fc1; font-size:11px}
+.listNewsEvent{float:left}
+.listNewsEvent li{float:left; width:48%; margin:0 6px; padding:4px 0; display:inline}
+.listNewsEvent li p{font-size:11px}
+.img2{width:48px; height:48px; float:left; margin-right:10px}
+.TourByCountry{padding:5px 0; font-size:11px; color:#333333}
+.TourByCountry a, .TourByCountry a:visited{color:#333; padding:0 1px}
+/*---rightcol---*/
+/*boxSearch*/
+.boxSearch{background:url(../images/search_top.gif) no-repeat left top; padding-top:4px}
+.boxSearch_bottom{background:url(../images/search_bottom.gif) no-repeat left bottom; padding-bottom:4px}
+.boxSearch_ct{background:url(../images/search_bg.gif) repeat-x left bottom; border-left:1px solid #f0f0f0; border-right:1px solid #f0f0f0; padding:10px}
+.titleTour{text-transform:uppercase; font:bold 13px Tahoma; color:#11568d; padding-bottom:15px}
+.boxSearch_ct table td{font-size:11px; font-family:Tahoma; padding:5px 0}
+.boxSearch_ct select{font-size:11px; margin:0; padding:3px 0; width:185px; color:#000}
+.divButtonSearch{padding-top:10px;}
+.buttonSearch{background:url(../images/buttonSearch.gif) no-repeat; width:93px; height:27px; color:#fff; text-transform:uppercase; font:bold 12px Tahoma; cursor:pointer; text-align:center; border:0; padding:0; margin:0}
+/*boxOrange*/
+.boxOrange{background:url(../images/boxOrange_bottom.gif) no-repeat left bottom; padding-bottom:6px; margin-top:17px}
+.hdOrange{background:#eb9518; height:33px}
+.hdOrange .left{background-position:-57px 0; height:33px; width:7px; float:left}
+.hdOrange .right{background-position:-69px 0; height:33px; width:7px; float:right}
+.hdOrange .center{height:33px; line-height:33px; float:left; }
+.hdOrange .center span{text-transform:uppercase; color:#fff; font:normal 13px Tahoma; padding-left:5px; background:url(../images/icon/arrow_orange.gif) no-repeat center bottom; display:inline-block; height:33px; line-height:33px}
+.bdOrange{border-left:1px solid #f2f2f2; border-right:1px solid #f2f2f2; padding:6px 10px 2px 10px; background:#fefefe url(../images/boxOrange_bg.gif) repeat-x left bottom}
+.listBestTours li{font-size:11px; padding:8px 0; font-family:Tahoma}
+.img1{width:43px; height:35px; float:left; margin-right:12px; border:1px solid #cbcbcb}
+.textThrough{text-decoration:line-through}
+/*boxLightOrange*/
+.boxLightOrange{background:url(../images/boxLightOrange_bottom.gif) no-repeat left bottom; padding-bottom:6px; margin-top:17px}
+.bdLightOrange{border-left:1px solid #f2f2f2; border-right:1px solid #f2f2f2; padding:8px 10px 2px 10px; background:#fffefc url(../images/boxLightOrange_bg.gif) repeat-x left bottom}
+/*boxNewsLetter*/
+.boxNewsLetter{background:url(../images/NewsLetter_bottom.gif) no-repeat left bottom; padding-bottom:7px; margin-top:17px}
+.bdNewsLetter{background:url(../images/NewsLetter_ct.gif) no-repeat right bottom; border-left:1px solid #F2F2F2; border-right:1px solid #F2F2F2; padding:10px 10px 3px 10px}
+.description{font-size:11px; color:#333; font-family:Tahoma; line-height:18px}
+.inputNewsLetter{border:1px solid #eeeeee; background:none; width:168px; padding:3px 5px; font-size:11px; color:#333; font-family:Tahoma; margin:0 6px 0 0}
+.button_SignUp{border:1px solid #eeeeee; margin:0; padding:2px 8px; background:#f9cb70 url(../images/button_SignUp.gif) repeat-x left bottom; color:#fff; 
+text-transform:uppercase; font:bold 11px Tahoma; cursor:pointer}
+.tags-NewsLetter{padding:15px 0 7px 0}
+/*boxWeather*/
+.boxWeather{margin-top:17px}
+.titleWeather{text-transform:uppercase; color:#333; font-family:Tahoma; border-bottom:2px solid #505050; padding-bottom:2px}
+.weather{padding:10px 0 0 0}
+.txt-weather{color:#f10202; font:bold 16px Tahoma; margin-left:10px}
+.cbo_city select{background:url(../images/bg_select_weather.gif) repeat-x left top; border:1px solid #f5f5f5; font-size:11px; color:#5e5e5e; font-family:Tahoma; padding:2px 0 2px 10px; width:150px}
+.img-weather{margin-left:10px; vertical-align:middle}
+/*-----------bottom----------*/
+#bottom{background:#f0f0f0; border-top:2px solid #e0e0e0; padding:12px; margin-top:10px}
+#bottom .FloatLeft p{background:#fff; border:1px solid #e6e6e6; padding:10px; margin:15px 0 0 15px}
+#bottom .FloatLeft p img{margin:0 5px}
+#bottom .FloatRight{text-align:right; font-size:11px; font-family:Tahoma}
+#bottom .FloatRight, #bottom .FloatRight a, #bottom .FloatRight a:visited{color:#4e4e4e}
+.imgBottom img{margin-left:20px; margin-top:10px}
+
+/*******************book tour page***************************/
+.boxBlueRight{padding-bottom:5px; background:url(../images/boxBlueRight_bottom.gif) no-repeat left bottom;}
+.boxBlueRight .bdBlue{background:#fdfdfd url(../images/bdBlue_bg.gif) repeat-x left bottom}
+.listType{padding:5px 5px 10px 10px}
+.listType li{padding:2px 0; font-size:11px}
+.listType li a, .listType li a:visited{font-size:11px; color:#000}
+/*frm_OnlineBooking*/
+.frm_OnlineBooking{background:url(../images/frm_OnlineBooking_top.gif) no-repeat left top; padding-top:6px}
+.frm_OnlineBooking_ct{background:#1a5991 url(../images/frm_OnlineBooking_bottom.gif) no-repeat left bottom; padding-bottom:6px}
+.frm_OnlineBooking_ct p{color:#fff; line-height:18px; padding:3px 10px}
+/*boxInfo*/
+.boxInfo{background:url(../images/inner_top.gif) no-repeat left top; padding-top:5px; margin-top:17px}
+.boxInfo_bg{background:url(../images/boxBlue_bottom.gif) no-repeat left bottom; padding-bottom:5px}
+.boxInfo_ct{border-left:1px solid #ebebeb; border-right:1px solid #ebebeb; padding:5px 10px}
+.tableInfo h4{color:#11568d; border-bottom:2px solid #135991; padding-bottom:2px; text-align:left; font:normal 13px Tahoma; margin-bottom:8px}
+.tableInfo td{font-size:11px; font-family:Tahoma; color:#333333}
+input.rad{width:13px; height:13px; margin:0 6px 0 0; border:0 !important}
+input.inputText-info{border:1px solid #135991; margin:0 2px 0 0; padding:2px 5px; font-size:11px; width:120px}
+select.cboSelect-info{border:1px solid #135991; margin:0 2px 0 0; padding:2px 0 2px 5px; font-size:11px; width:131px}
+.txtArea{width:430px; height:135px; font-size:11px; overflow:auto}
+.textBold{font-weight:bold; color:#12588f; font-family:Tahoma; font-size:14px}
+.Color333{color:#333}
+.btContinue{background:url(../images/button_%20Continue.gif) no-repeat; width:90px; height:30px; cursor:pointer; text-align:center; 
+text-transform:uppercase; color:#fff; font:bold 11px Tahoma; border:0; margin:0 5px 0 0}
+.tag-btContinue {padding-top:14px}
+
+/**********************tour quoc gia****************************/
+.video_tour, .morePictures{margin-top:17px}
+.textnone{padding:10px 0; text-align:justify; font:normal 14px/25px Tahoma}
+.img_morePictures{width:137px; height:110px; margin:2px; border:1px solid #dedede}
+/**********************List tour****************************/
+/*listSpecialOffers*/
+.listSpecialOffers{padding-top:8px}
+.listSpecialOffers li{background:url(../images/bg_SpecialPffers.jpg) no-repeat left top; padding:9px; margin-bottom:10px}
+.fLeft{float:left; width:522px; margin:0 30px 0 0}
+.fRight{float:right; width:65px}
+.fLeft h2 a, .fLeft h2 a:visited{color:#11568d}
+.fLeft h2 a{font-size:19px; font-family:Tahoma; line-height:23px}
+.img-SpecialOffers{width:83px; height:72px; background:#fff; padding:3px; float:left; margin:0 12px 0 0} 
+.fromUSD{font-weight:bold; font-size:11px; font-family:Tahoma; margin-top:31px}
+.priceUSD{font-weight:bold; font-size:16px; font-family:Tahoma}
+/*item*/
+.item{padding:15px 0; background:url(../images/bg_linedoter.gif) repeat-x left bottom}
+.img-YourJourney {float:left; width:160px; height:140px; background:#fff; padding:5px; border:1px solid #eaeaea; margin:0 15px 0 5px}
+.item h2{padding-bottom:10px}
+.item h2 a, .item h2 a:visited{color:#11568d}
+.boxDescription{padding:6px 0}
+.boxDescription .fromUSD{margin-top:0}
+.boxDescription .FloatLeft{font-size:11px}
+.imgOrange a{background:url(../images/bg_imgOrange.gif) no-repeat; width:95px; height:28px; display:inline-block; line-height:28px; text-align:center; font-weight:bold; font-size:11px; margin-left:10px}
+.imgOrange a, .imgOrange a:visited{color:#fff}
+.imgOrange a:hover{text-decoration:none}
+.NoBackground{background:none !important}
+/**********************Review tour****************************/
+/*boxReviewTop*/
+.boxReviewTop{background:url(../images/inner_top.gif) no-repeat 0 0; padding-top:5px; margin-bottom:10px}
+.boxReviewTop h2{font-size:20px; color:#12588f; line-height:22px; padding:5px 0 10px 5px}
+.boxReviewTop h2 a, .boxReviewTop h2 a:visited{color:#12588f}
+.boxReviewTop_ct{border-left:1px solid #efefef; border-right:1px solid #efefef; padding:0 8px; background:url(../images/boxReviewTop_bg.gif) repeat-x left bottom; 
+padding-bottom:9px; width:639px}
+.iconHotel{background:url(../images/bg_iconHotel.jpg) no-repeat left top; padding:7px; width:200px; height:134px; float:left; margin-right:15px}
+.desc2{font-size:11px; color:#333; line-height:18px}
+
+.btPrivate{}
+.btPrivate ul {height:36px; float:right; position:relative; top:-4px; right:-8px;}
+.btPrivate ul li{float:left; height:36px}
+.btPrivate ul li a{background:url(../images/tab_left.gif) no-repeat 0 -87px; float:left; height:36px; font-weight:bold; padding-left:10px}
+.btPrivate ul li a span{background:url(../images/tab_right.gif) no-repeat right -87px; height:36px; display:inline-block; line-height:36px; font-size:11px; padding:0 10px 0 0}
+.btPrivate ul li a span, .btPrivate ul li a:visited span{color:#fff}
+.btPrivate ul li a:hover, .btPrivate ul li a:hover span{color:#fff; text-decoration:underline}
+
+.boxReviewTop_tabs{background:url(../images/boxReviewTop_bottom.gif) no-repeat; height:29px}
+.boxReviewTop_tabs ul{height:30px; width:100%}
+.boxReviewTop_tabs ul li{float:left; height:29px; margin-left:8px}
+.boxReviewTop_tabs ul li a{float:left; height:29px; font-size:14px; line-height:29px; background:url(../images/tab_left.gif) no-repeat 0 0}
+.boxReviewTop_tabs ul li span{display:inline-block; height:29px; line-height:29px; color:#fff; padding: 0 10px; background:url(../images/tab_right.gif) no-repeat right top}
+.boxReviewTop_tabs ul li a, .boxReviewTop_tabs ul li a:visited{color:#fff}
+.boxReviewTop_tabs ul li a:hover, .boxReviewTop_tabs ul li a.selected{background-position:0 -29px; text-decoration:none}
+.boxReviewTop_tabs ul li a:hover span, .boxReviewTop_tabs ul li a.selected span{background-position:right -29px; color:#12578e; text-decoration:none}
+
+.boxReviewTop_tabs ul li.li_Orange a{background:url(../images/tab_left.gif) no-repeat 0 -58px}
+.boxReviewTop_tabs ul li.li_Orange span{background:url(../images/tab_right.gif) no-repeat right -58px}
+.boxReviewTop_tabs ul li.li_Orange a:hover, .boxReviewTop_tabs ul li.li_Orange a.selected{background-position:0 -58px; text-decoration:none}
+.boxReviewTop_tabs ul li.li_Orange a:hover span, .boxReviewTop_tabs ul li.li_Orange a.selected span{background-position:right -58px; color:#fff; text-decoration:none}
+
+/**/
+.titleH3{color:#464646; font-size:19px; padding:7px 0; line-height:22px}
+.outer {background:#e6f4ff url(../images/boxReview_top.gif) no-repeat 0 0; margin-top:30px;position:relative;}
+.inner {height:100%; border:1px solid #fff; border-left-width:0; border-right-width:0; position:relative; width:100%; z-index:100; background:url(../images/boxReview_bottom.gif) no-repeat left bottom; padding-bottom:6px}
+h3 {background:#cbe9ff url(../images/left_legend.gif) no-repeat left top; border:0; left:6px; line-height:30px; height:30px; margin:0; padding:0 0 0 6px; position:absolute; top:-15px;}
+.outer p {padding:5px 12px;}
+.titleLegend{background:url(../images/right_legend.gif) no-repeat right top; height:30px; padding-right:6px; float:left; line-height:30px; font-size:11px; color:#333}
+
+.reportProblem a{background:url(../images/icon/icon_01.gif) no-repeat left center; font-weight:bold; font-size:11px; padding-left:16px}
+.reportProblem a, .reportProblem a:visited{color:#076a8a}
+.reportProblem a:hover{text-decoration:none; color:#ff8a00}
+.star_yellow{margin-top:6px}
+.reportProblem{padding-top:10px}
+.tag-table-addreview{padding:19px 12px 10px 12px}
+.table-addreview td{font-size:11px}
+.inputText-addreview{border:1px solid #5cb7ff; padding:4px 5px; margin:0; font-size:11px; width:180px}
+.select-addreview{border:1px solid #5cb7ff; padding:1px 0 1px 5px; margin:0; font-size:11px; width:130px; height:22px}
+.textarea-addreview{border:1px solid #5cb7ff; padding:3px; font-size:11px; font-family:Tahoma; width:425px; height:140px; margin:3px 0; overflow:auto}
+.btSumit{background:url(../images/btSumnit.gif) no-repeat; width:88px; height:28px; color:#fff; font-weight:bold; font-size:11px; text-align:center; margin:0; padding:0; cursor:pointer; border:0 !important}
+
+/**********************Detail tour****************************/
+.title{color:#12578e; font:bold 14px/20px Tahoma}
+.listDay li{font-size:11px; color:#333; padding:1px 0}
+.linkYellow a, .linkYellow a:visited{color:#fc0; font-size:11px}
+/*boxOuter*/
+.boxOuter{background:#f0f8ff url(../images/boxOuter_top.gif) no-repeat 0 0; padding:7px ; margin-top:10px;}
+/*boxInner*/
+.boxInner{padding-bottom:12px}
+.titleInner{background:#fff url(../images/tab_left_white.gif) no-repeat left top; height:29px; float:left;}
+.titleInner span{background:url(../images/tab_right_white.gif) no-repeat right 0; height:29px; display:inline-block; color:#124776; font:bold 13px/29px Tahoma; 
+text-decoration:underline; padding:0 10px}
+.boxInner_ct{background:#fff url(../images/boxInner_bottom.gif) no-repeat left bottom; padding:8px}
+.tblPriceTour{margin:10px 0}
+.tblPriceTour td{padding:5px; font-size:11px; color:#333;}
+.link333 a, .link333 a:visited{color:#333}
+/*listHotelAccom*/
+.listHotelAccom{padding:0 5px}
+.listHotelAccom li{font-size:11px; color:#333; border-bottom:1px dotted #d8d8d8; padding:10px 0}
+.img-HotelAccom{width:110px; height:87px; float:right; margin-left:12px; background:url(../images/bg_img.gif) no-repeat 0 0; padding:5px}
+.NoBorder{border:0 !important}
+.textnone-inner{padding:0 5px}
+/*boxButtonEndPage*/
+.boxButtonEndPage .bt_left{background:#fc0 url(../images/bt_left.gif) no-repeat 0 0; padding-left:5px; height:28px; display:inline-block; margin-left:14px}
+.boxButtonEndPage .bt_right{background:url(../images/bt_right.gif) no-repeat right 0; padding-right:5px; height:28px; display:inline-block; text-transform:uppercase; 
+color:#fff; font-size:13px; line-height:28px; color:#fff}
+.boxButtonEndPage .bt_right a, .boxButtonEndPage .bt_right a:visited{color:#fff; padding:0 5px}
+/*boxRightReview*/
+.boxRightReview{}
+/**********************Photo tour****************************/
+/*boxPhoto*/
+.boxPhoto_top{background:url(../images/boxPhoto_top.gif) no-repeat 0 0; padding-top:4px}
+.boxPhoto_bottom{background:url(../images/boxPhoto_bottom.gif) no-repeat 0 bottom; padding-bottom:4px}
+.boxPhoto_bg{background:url(../images/boxPhoto_center.gif) repeat-y 0 0; padding:6px 10px}
+.imgSmall-photo{margin-top:10px; width:637px; overflow:auto;}
+.imgSmall-photo ul{width:2000px; height:102px}
+.imgSmall-photo ul li{float:left; height:92px}
+.imgSmall-photo img{width:124px; height:92px; margin-right:5px}
+/*boxRightReview*/
+.boxRightReview{background:url(../images/boxRightReview_top.gif) no-repeat 0 0; padding-top:4px}
+.boxRightReview_bot{background:url(../images/boxRightReview_bottom.gif) no-repeat 0 bottom; padding-bottom:4px}
+.boxRightReview_bg{background:url(../images/boxRightReview_bg.gif) repeat-y 0 0; padding:5px 9px}
+.tbl-grayReview{margin-bottom:10px}
+.tbl-grayReview td{color:#333; font-size:11px}
+.grayReview{background:#f2f1ef; padding:5px 15px; color:#333; font-size:11px}
+.grayReview .star_yellow{margin-top:0}
+.name, .name a, .name a:visited{color:#2282cf}
+/**********************News tour****************************/
+h4.titleNews{color:#11568d; text-transform:uppercase}
+.NewsEvent li{padding:10px 0; border-bottom:1px dotted #b4b4b4}
+.NewsEvent h6 a, .NewsEvent h6 a:visited{font-size:11px; color:#333333}
+.date{font-weight:bold; color:#777777; font-size:11px}
+.img-News{border:1px solid #e1e1e1; margin-right:13px; float:left; width:125px; height:85px}
+.divNavigationBot{height:22px; margin-top:10px}
+.NavigationBot{height:22px; float:right}
+.NavigationBot li{float:left; height:22px; line-height:22px; color:#333333; font-size:11px; padding:0 5px}
+.NavigationBot li a, .NavigationBot li a:visited{color:#135991;}
+.NavigationBot li.select{font-weight:bold}
+.NewsEvent h2{color:#11568d; font-size:18px}
+.linkBlue a, .linkBlue a:visited{color:#11568d}
+/*othernews*/
+.othernews ul{padding-left:20px}
+.othernews ul li{font-size:11px; color:#333333; background:url(../images/icon/icon_03.gif) no-repeat 0 8px; padding-left:10px}
+.othernews ul li a, .othernews ul li a:visited{color:#11568d}
+.othernews h6{font-size:11px; color:#333; padding:7px 0}
+/* CSS Document */
+.ClearBoth{clear:both}
+.FloatLeft{float:left}
+.FloatRight{float:right}
+.ColorRed{color:#f00}
+/****header*****/
+#header{background:url(../images/bg_header.gif) repeat-x; height:163px;}
+.Top{width:1000px; padding:0; margin:0 auto}
+.NavTop{padding-top:82px; height:61px}
+/****Center*****/
+#Center{background:#930202 url(../images/bg_ControlSlide.gif) repeat-x left bottom;}
+.mainCenter{width:1000px; margin:0 auto; padding:0;}
+.dispalySlide{margin:0;}
+/*ControlSlide*/
+.ControlSlide{/*background:url(../images/bg_ControlSlide.gif) repeat-x;*/ height:79px;}
+.ControlSlide_Left{float:left; width:340px; padding-top:18px}
+.arrowBack{padding:25px 0 0 5px; float:left; width:9px;}
+.arrowNext{padding:25px 0 0 0; float:left; width:9px}
+.displaySmallSlide{float:left; width:305px; padding:8px 5px 0 7px;}
+.displaySmallSlide ul{margin:0; padding:0}
+.displaySmallSlide li{float:left; padding:0 5px}
+.displaySmallSlide li a{width:48px; height:43px; border:1px solid #ff0000; display:inline-block}
+.displaySmallSlide li a.imageSelect{width:46px; height:41px; border:1px solid #fff}
+
+.ControlSlide_Right{height:61px; float:right; padding-top:18px; width:655px}
+.ControlSlide_Right span{line-height:61px; padding:0 5px; text-transform:uppercase; font-size:12px; float:left}
+.ControlSlide_Right span a, .ControlSlide_Right span a:visited{color:#fff}
+.ControlSlide_Right ul{float:right}
+.ControlSlide_Right ul li{float:left; padding:0 5px 0 15px;}
+.ControlSlide_Right ul li a, .ControlSlide_Right ul li a:visited{text-transform:uppercase; color:#f10000; background:url(../images/icon/icon.gif) no-repeat 0 center; display:inline-block; line-height:61px;}
+.ControlSlide_Right ul li a.reset{background-position:0 20px; padding-left:20px}
+.ControlSlide_Right ul li a.pan{background-position:-92px 17px; padding-left:22px}
+.ControlSlide_Right ul li a.zoomin{background-position:-173px 20px; padding-left:23px;}
+.ControlSlide_Right ul li a.zoomout{background-position:-284px 20px; padding-left:23px;}
+.ControlSlide_Right ul li a.save{background-position:-409px 20px; padding-left:18px;}
+.ControlSlide_Right ul li a.print{background-position:-490px 20px; padding-left:20px;}
+/****Footer****/
+#Footer{background:#930202; color:#070000; height:37px;}
+.copyright{width:1000px; margin:0 auto; padding:0}
+.copyright p{padding-right:5px; width:215px; float:right; text-align:center; line-height:16px; padding-top:2px}
+.copyright p a, .copyright p a:visited{color:#070000; text-decoration:underline; padding:0 3px}
+.copyright p a:hover{color:#f00; text-decoration:none}

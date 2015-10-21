@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<base href="http://<?php echo $_SERVER['HTTP_HOST'].$this->baseUrl()?>/admin/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?php echo $this->headMeta(); ?> 
+	<?php echo $this->headTitle(); ?> 
+    <link href="/css/admin.css" rel="stylesheet" media="all" type="text/css" />    
+	<script type="text/javascript" src="/js/tiny_mce/tiny_mce.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.4.2.min.js"></script>    
+    <script type="text/javascript" src="/js/admin.js"></script>
+    <script type="text/javascript" src="/js/superfish.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.8.1.custom.min.js"></script>
+    <script type="text/javascript" src="/js/tooltip.js"></script>
+    <script type="text/javascript" src="/js/tablesorter.js"></script>
+    <script type="text/javascript" src="/js/tablesorter-pager.js"></script>
+    <script type="text/javascript" src="/js/cookie.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+	<script type="text/javascript" src="/js/jquery.MultiFile.js" language="javascript"></script>
+     <!--[if IE 6]>
+	<link href="/css/admin/ie6.css" rel="stylesheet" media="all" />
+	<script src="/js/pngfix.js"></script>
+	<script>
+	  /* EXAMPLE */
+	  DD_belatedPNG.fix('.logo, .other ul#dashboard-buttons li a');
+	</script>
+	<![endif]-->
+    <!--[if IE 7]>
+	<link href="/css/admin/ie7.css" rel="stylesheet" media="all" />
+	<![endif]-->
+<script>
+DOMAIN_NAME = "http://<?php echo $_SERVER['HTTP_HOST'].$this->baseUrl()?>/admin/";
+</script>
+</head>
+<body>
+<?php $Member = $_SESSION['Member']?>
+    <div id="header">
+        <div id="top-menu">            
+             <span>Logged in as <a title="Logged in as admin"><?php echo $Member['name']?></a></span> | 
+             <a href="<?php echo $this->url(array('controller'=>'member', 'action'=>'profile', 'module'=>'admin','id'=>$id))?>" title="My profile">Edit profile</a> | 
+             <a href="<?php echo $this->url(array('controller'=>'member','action'=>'logout','module'=>'admin'),'',true)?>"  title="Logout">Logout</a> | 
+             <a target="_blank" href="<?php echo $this->url(array('controller'=>'index','action'=>'index','module'=>'default'),'',true)?>"  title="Logout">View site</a>
+        </div>
+        <div id="sitename">
+            <a href="/admin" class="logo float-left" title="Admintasia">Quản trị hệ thống</a>
+              <?php echo My_Plugin_Libs::getSplash()?>
+            <div class="button float-right"></div>
+        </div>
+        
+        <ul id="navigation" class="sf-navbar sf-js-enabled">         
+            <li><a href="<?php echo $this->url(array('controller'=>'content',	'action'=>'index','module'=>'admin'),'',true)?>">Quản Lý Bài Viết</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'news',	'action'=>'index','module'=>'admin'),'',true)?>">Quản Lý Tin Tức</a>
+            <ul>
+            <li><a href="<?php echo $this->url(array('controller'=>'setions',   'action'=>'index','module'=>'admin'),'',true)?>">Danh mục</a></li> 
+            <li><a href="<?php echo $this->url(array('controller'=>'newgroup',	'action'=>'index','module'=>'admin'),'',true)?>">Nhóm Tin Tức</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'news',	'action'=>'index','module'=>'admin'),'',true)?>">Danh Sách Tin Tức</a></li>
+            </ul>
+            </li>  
+            <li><a href="<?php echo $this->url(array('controller'=>'contact',	'action'=>'index','module'=>'admin'),'',true)?>">Quản Lý Đơn Hàng</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'product',   'action'=>'index','module'=>'admin'),'',true)?>">Quản Lý Sản Phẩm</a>
+            <ul>     
+            <li><a href="<?php echo $this->url(array('controller'=>'productgroup',   'action'=>'index','module'=>'admin'),'',true)?>">Nhóm Sản Phẩm</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'product',   'action'=>'index','module'=>'admin'),'',true)?>">Danh Sách Sản Phẩm</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'color',   'action'=>'index','module'=>'admin'),'',true)?>">Màu Xe - Phong Thủy</a></li>
+            </ul>
+            </li>   
+            <li><a href="<?php echo $this->url(array('controller'=>'banner',	'action'=>'index','module'=>'admin'),'',true)?>">Quản Lý File</a>
+            <ul>
+            <li><a href="<?php echo $this->url(array('controller'=>'banner',	'action'=>'index','module'=>'admin'),'',true)?>">Quảng Cáo</a></li>
+            <li><a href="<?php echo $this->url(array('controller'=>'video',	'action'=>'index','module'=>'admin'),'',true)?>">Video</a></li>            
+            </ul>
+            </li>           
+          <!-- Member and System manager -->
+          <!-- open if update system -->
+            <li class=""><a href="<?php echo $this->url(array('controller'=>'member',	'action'=>'index','module'=>'admin'),'',true)?>" class="sf-with-ul">Thành Viên</a>
+               
+                <ul style="display: none; visibility: hidden;">
+               		<li><a href="<?php echo $this->url(array('controller'=>'group',       'action'=>'index','module'=>'admin'),'',true)?>">Nhóm Thành Viên</a>
+	                    <ul>
+	                   	 	<li><a href="<?php echo $this->url(array('controller'=>'group','action'=>'create','module'=>'admin'),'',true)?>">Thêm Nhóm</a></li>                    
+	                    </ul>
+                    </li> 
+                    <li><a href="<?php echo $this->url(array('controller'=>'member',	'action'=>'create','module'=>'admin'),'',true)?>">Thêm Thành Viên</a> </li>                   
+                    <li><a href="<?php echo $this->url(array('controller'=>'member',	'action'=>'index','module'=>'admin'),'',true)?>">Danh Sách Thành Viên</a> </li>
+                    <li><a href="<?php echo $this->url(array('controller'=>'member',	'action'=>'history','module'=>'admin'),'',true)?>">Theo Dõi Hoạt Động</a> </li>
+                </ul>
+            </li>            
+            <li class=""><a class="sf-with-ul" href="#">Hệ Thống</a>
+                <ul style="display: none; visibility: hidden;">
+                <!--  
+                 	<li><a href="<?php echo $this->url(array('controller'=>'settings',	'action'=>'home','module'=>'admin'),'',true)?>">Trang Chủ</a></li>
+                    <li><a href="<?php echo $this->url(array('controller'=>'settings',	'action'=>'footer','module'=>'admin'),'',true)?>">Phụ Đề</a> </li>
+                 -->   
+                    <li><a href="<?php echo $this->url(array('controller'=>'settings', 'action'=>'index','module'=>'admin'),'',true)?>">Cài Đặt</a> </li>
+                </ul>
+            </li>           
+        </ul>
+    </div>
+    <div id="page-wrapper">
+        <div id="main-wrapper">
+        	<div id="main-content">
+        	<div class="title">
+			<h3><?php echo $this->Title ?> </h3>
+			</div>
+            <?php echo $this->layout()->content; ?>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <div class="clearfix">
+    </div>
+    <div id="footer">
+       <!-- <div id="menu">
+            <a target="_blank" href="<?php echo $this->url(array('controller'=>'index','action'=>'index','module'=>'default'),'',true)?>" title="Home">Home</a><a href="#" title="Administration">Administration</a>
+            <a href="<?php echo $this->url(array('controller'=>'settings', 'action'=>'index','module'=>'admin'),'',true)?>" title="Settings">Settings</a> <a href="#" title="Contact">Contact</a>
+        </div> -->
+        <strong>Copyright © 2010 - 2011 Hoai Nam Tran</strong>
+    </div> 
+</body>
+</html>

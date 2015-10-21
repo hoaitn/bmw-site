@@ -1,0 +1,104 @@
+<?php if($this->error):?>
+<div class="ui-widget">
+<div class="ui-state-error ui-corner-all" style="padding: .7em;">
+<p><span class="ui-icon ui-icon-alert"
+	style="float: left; margin-right: .3em;"></span> <strong>Error message:</strong><br />
+<div style="padding-left: 20px">
+				<?php foreach($this->error as $error){echo '- '.$error.'<br/>';}?>
+				</div>
+</p>
+</div>
+</div>
+<?php endif;?>
+
+<div id="tabs">
+<ul>
+	<li><a href="#tabs-1">Main content</a></li>
+</ul>
+<form action="" method="post">
+<div id="tabs-1" class="hastable">
+
+<table>
+	<tr>
+		<td width="160"><span style="color:#CC0000;">*</span>Email</td>
+		<td><?php echo $this->formText('email',$_REQUEST['email'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>First Name</td>
+		<td><?php echo $this->formText('firstName',$_REQUEST['firstName'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>Last Name</td>
+		<td><?php echo $this->formText('lastName',$_REQUEST['lastName'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td>Website</td>
+		<td><?php echo $this->formText('website',$_REQUEST['website'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td>Website description</td>
+		<td><?php echo $this->formTextarea('website_descript',$_REQUEST['website_descript'],array('rows'=>5,'cols'=>46,'class'=>'mceEditor'))?></td>
+	</tr>
+	<tr>
+		<td>Website Number</td>
+		<td><?php echo $this->formText('websiteNo',($_REQUEST['websiteNo']?$_REQUEST['websiteNo']:0),array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>Contact Phone Number</td>
+		<td><?php echo $this->formText('phone',$_REQUEST['phone'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>City</td>
+		<td><?php echo $this->formText('city',$_REQUEST['city'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>Postcode</td>
+		<td><?php echo $this->formText('postCode',$_REQUEST['postCode'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td><span style="color:#CC0000;">*</span>State</td>
+		<td><?php 
+			$option = array(
+			"0" => "Select State",
+			"1" => "New South Wales",
+			"2" => "Victoria",
+			"3" => "Queensland",
+			"4" => "Tasmania",
+			"5" => "South Australia",
+			"6" => "Westrn Australia",
+			"7" => "Northern Terrotory",
+			"8" => "Australia Capital Territory",
+			);
+			echo $this->formSelect('stateNo',NULL,NULL,$option,$listsep);?></td>
+	</tr>	
+</table>
+<input type="hidden" value="" name="latLon" id="latLon" />
+</div>
+<input type="submit" value="Save" class="ui-button ui-widget ui-state-default ui-corner-all"/>
+<input type="button" value="Back" onclick="javascript:history.back();" />
+</form>
+</div>
+<script type="text/javascript">
+	initialize();
+	$("#stateNo").change(function(){
+		var city = $("#city").val();
+		var postcode = $("#postCode").val();
+		var stateId = $("#stateNo").val();
+		var stateCode = null;
+		switch (stateId){
+			case "1": stateCode = "NSW";	break;
+			case "2": stateCode = "VIC";	break;
+			case "3": stateCode = "QLD";	break;
+			case "4": stateCode = "TAS";	break;
+			case "5": stateCode = "SA";		break;
+			case "6": stateCode = "WA";		break;
+			case "7": stateCode = "NT";		break;
+			case "8": stateCode = "ACT";	break;
+		}
+		var address = city + ", " + postcode + ", " + stateCode;
+		//alert(address);
+		getLatLon(address);
+	});
+
+	
+</script>

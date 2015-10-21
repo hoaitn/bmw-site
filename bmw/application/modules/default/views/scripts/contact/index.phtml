@@ -1,0 +1,29 @@
+<?php if($_SESSION['msg'] != ""){?>
+<div style="width:95%;margin:0 auto; padding:10px; border: 1px solid #3A93EF; background:#FFFFFF; color: #3A93EF;">
+<b><?php echo $_SESSION['msg'];?></b></span>
+</div>
+<?php unset($_SESSION['msg']);}else{?>
+<div class="block_content">
+<?php if($this->error):?>
+<div style="width:95%;margin:0 auto; padding:10px; border: 1px solid #CC0000; background:#FFFFFF; color: #CC0000;">
+<?php foreach($this->error as $error){echo '- '.$error.'<br/>';}?>
+</div>
+<?php endif;?>
+<br/>
+	<form action="/buy/product/<?php echo $this->Product->id?>" method="post">
+	  <ul>
+		<li><label>Sản phẩm đã chọn:</label><input id="name_product" name="name_product" readonly="readonly" class="text" type="text" size="40" value="<?php echo $this->Product->product_name?>"/></li>
+		<li><label>Tên của bạn:</label><input id="full_name" name="full_name" class="text" type="text" size="40"/></li>
+		<li><label>Email:</label><input id="email" name="email" class="text" type="email" size="40"/></li>
+		<li><label>Số điện thoại:</label><input id="phone" name="phone" class="text" type="text" size="40"/></li>
+		<li><label>Địa chỉ:</label><input id="address" name="address" class="text" type="text" size="40"/></li>
+		<li><label>Yêu cầu:</label><textarea id="mesage" name="mesage" class="uniform" cols="42" rows="5"></textarea></li>
+		<li>
+		<div class="button" id="uniform-undefined" style="-moz-user-select: none;"><span><input type="submit" value="Gửi" style="opacity: 0;" />Gửi</span></div>
+		<div class="button" id="uniform-undefined" style="-moz-user-select: none;"><span><input type="reset" value="Làm lại" style="opacity: 0;">Làm lại</span></div> 
+		</li>
+	  </ul>
+	</form>
+</div><!--End .block_content-->
+<?php }?>
+                

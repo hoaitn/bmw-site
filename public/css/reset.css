@@ -1,0 +1,32 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+body {
+	line-height: 1;
+    font-size:12px;
+    font-family:tahoma;
+    background:#bfbfbf;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-spacing: 0;
+}
+.clear{clear:both;}
+.clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.last{margin-right:0;}

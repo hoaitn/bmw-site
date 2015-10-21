@@ -1,0 +1,40 @@
+<div class="block other">
+	<h2 class="title"><img src="images/guide.png" alt="" /><a>NHỮNG THỨ CẦN MANG THEO KHI ĐI DÃ NGOẠI</a></h2>
+	
+	<ul>
+	<?php $NewGroup = NewGroup::getBySetionId(1); foreach ($NewGroup as $Group):?>
+		<li><a href="news/index/group/<?php echo $Group->id?>" title=""><?php echo $Group->name?></a></li>                            
+	<?php endforeach;?>    
+	</ul>
+</div><!--End .block-->
+<div class="block other">
+	<h2 class="title"><img src="images/support.png" alt="" />HỖ TRỢ MUA XE BMW</h2>
+	<ul>
+	<?php $NewGroup = NewGroup::getBySetionId(2); foreach ($NewGroup as $Group):?>
+		<li><a href="news/index/group/<?php echo $Group->id?>" title=""><?php echo $Group->name?></a></li>                            
+	<?php endforeach;?>   
+	</ul>
+</div><!--End .block-->
+<div class="block other">
+	<h2 class="title"><img src="images/news.png" alt="" />TIN TỨC Ô TÔ BMW</h2>
+	<ul>
+	<?php $NewGroup = NewGroup::getBySetionId(3); foreach ($NewGroup as $Group):?>
+		<li><a href="news/index/group/<?php echo $Group->id?>" title=""><?php echo $Group->name?></a></li>                            
+	<?php endforeach;?>   
+	</ul>
+</div><!--End .block-->
+<div class="block other">
+	<h2 class="title"><img src="images/tour.png" alt="" />ĐIỂM ĐẾN DU LỊCH</h2>
+	<ul>
+	<?php $NewGroup = NewGroup::getBySetionId(4); foreach ($NewGroup as $Group):?>
+		<li><a href="news/index/group/<?php echo $Group->id?>" title=""><?php echo $Group->name?></a></li>                            
+	<?php endforeach;?> 
+	</ul>
+</div><!--End .block-->
+<div class="block other">
+	<h2 class="title"><img src="images/gallery.png" alt="" />HÌNH ẢNH</h2>
+	<a href="http://bmw.com" title=""><img width="198" alt="" src="images/adv5.jpg" /></a>                             
+</div><!--End .block-->
+<div class="block other">
+	<?php echo $this->partial("index/visited.phtml")?>                  
+</div><!--End .block-->

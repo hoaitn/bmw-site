@@ -1,0 +1,47 @@
+Index :
+	-Banner: 
+		+	show content banner,upload ảnh banner
+	-Menu:
+		+	Em chưa rõ phần add/edit menu chỗ nào trong backend?
+		+	active menu
+		+	list các danh mục submenu
+		+	Anh cho em thêm tab Mua bán xe cũ
+	-Danh mục sản phẩm :
+		+	Không để hiển thị viền đen nếu không có danh mục con
+		+	Active danh mục
+	-Những thứ cần mang theo khi đi dã ngoại:
+		+	Chưa chạy được các link
+	-Hỗ trợ mua xe:
+		+	Chưa chạy được các link
+	-Tin tức ô tô:
+		+	Chưa chạy được các link
+	-Điểm đến du lịch
+		+	Chưa chạy được các link
+	-Hình ảnh
+		+	Bàn bạc về hiển thị module này
+	-Thông kê:
+		+	Bàn bạc về hiển thị module này
+	-Hỗ Trợ trực tuyến:
+		+	Em chưa rõ phần này nhập nick và sdt ở đâu?
+	-Anh em bmw:
+		+	Chưa chạy được các link
+	-Hỗ trợ mua xe:
+		+	Chưa chạy được các link
+	-Lịch sử:
+		+	Chưa chạy được các link
+	-Kỹ thuật lái xe:
+		+	Chưa chạy được các link
+	-BMW thư Giãn:
+		+	Chưa chạy được các link
+		+	Anh xem lại phần video của bmwnhapkhau
+	-Quảng cáo
+		+	Phần này chưa chạy
+Product:
+		+	Anh đại diện chưa hiển thị
+		+	Chưa link đến chức năng đặt hàng
+		+	Thay đổi Đặt mua thành chi tiết ở ngoài index
+		+	Sản phẩm khác em sẽ gửi cho anh html sau ạ:)
+		+	Block items thứ 3 anh để thêm class last giúp em
+Good luck :D
+		
+	

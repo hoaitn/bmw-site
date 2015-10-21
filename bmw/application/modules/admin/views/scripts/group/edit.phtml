@@ -1,0 +1,28 @@
+<form method="post">
+<table width="100%">
+	<tr valign="top">
+		<td>Tên nhóm: <input type="text" name="name"
+			value="<?php echo $this->Group->name?>" /></td>
+		<td class="hastable">			
+			<?php foreach($this->Resources as $key=>$Resource):?>
+			<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+            	<div class="portlet-header ui-widget-header">Phân mục <b><?php echo $Resource->name?></b></div>
+                <div class="portlet-content hastable" style="display: none;">								
+							<ul>
+							<?php foreach ($Resource->role as $role):?>
+							<li><input type="checkbox"
+								name="Role[<?php echo $key?>][<?php echo $role->code?>]"
+								value="1"
+								<?php if($this->Group->role[$key][$role->code]==1):?> checked="checked"<?php endif;?>
+								id="role_<?php echo $key?>_<?php echo $role->code?>" /> <label
+								for="role_<?php echo $key?>_<?php echo $role->code?>"><?php echo $role->name?></label></li>
+							<?php endforeach;?>
+							</ul>
+				</div>
+            </div>
+            <?php endforeach;?>
+			</td>
+	</tr>
+</table>
+<input type="submit" value="Lưu lại" class="ui-button ui-widget ui-state-default ui-corner-all"/>
+</form>

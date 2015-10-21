@@ -1,0 +1,19 @@
+<div class="hdBlue">
+    <ul><li class="sprite left"></li>
+         <li class="sprite right"></li>
+         <li class="center"><span>news &amp; event</span></li>
+    </ul>
+</div>
+<div class="bdBlue">
+     <ul class="listNewsEvent">
+     <?php $ListNews = News::getNewsNew()?>
+     <?php foreach ($ListNews as $News):?>
+          <li><a href="<?php echo $News->getLink()?>"><img class="img2" src="<?php echo $News->getThumbImage()?>" width="48" height="48"></a><p class="paddingBottom">
+               <b><a href="<?php echo $News->getLink()?>" class="linkBlack"><?php echo $News->title?></a></b></p>
+               <p><?php echo $News->description?>...<span class="more"><a href="<?php echo $News->getLink()?>">more »</a></span></p>
+               <div class="ClearBoth"></div>
+          </li>
+      <?php endforeach;?>                     
+     </ul>
+    <div class="ClearBoth"></div>
+</div>

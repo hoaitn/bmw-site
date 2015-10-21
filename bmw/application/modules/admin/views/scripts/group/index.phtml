@@ -1,0 +1,28 @@
+<div class="hastable">
+<div style="height:65px"><form action="">Tìm kiếm theo tên: <input type="text" name="keyword" value="<?php echo $_GET['keyword']?>"> <input type="submit" value="Tìm"></form>
+<button id="create-user" onclick="window.location='<?php echo $this->url(array('controller'=>'group','action'=>'create','module'=>'admin'),'',true)?>'">Tạo nhóm</button></div>
+
+<div class="hastable">
+<table cellspacing="0" cellpadding="0" width="100%" class="tbl_list">	
+		<thead>
+			<tr>
+				<th>Tên nhóm</th>
+				<th>Quyền hạn</th>
+				<th>Tùy chọn</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach($this->Group as $Group):?>
+		
+		<tr class="<?php ++$i; echo($i%2)?'first':'second'?>">
+			<td><?php echo $Group->name?></td>
+			<td></td>
+			<td width="75"><a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'Group','action'=>'edit','id'=>$Group->id))?>"><span class="ui-icon ui-icon-wrench"></span></a>
+			<a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'Group','action'=>'delete','id'=>$Group->id))?>"><span class="ui-icon ui-icon-circle-close"></span></a></td>
+		</tr>
+		<?php endforeach;?>
+	</tbody>
+</table>
+</div>
+<?php //echo $this->Pagination($this->Pager,'?page={%page}')?>
+</div>

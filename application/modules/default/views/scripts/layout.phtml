@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<?php echo $this->headTitle(); ?>
+<?php echo $this->headMeta(); ?> 
+<meta name="distribution" content="Global"/>
+<meta name="robots" content="index,follow" />
+<meta name="alexa" content="100"/>
+<meta name="Abstract" content=""/>
+<meta name="web_author" content="HoaiTN"/>
+<meta name="copyright" content="HoaiTN"/>
+<meta name="google-site-verification" content="" />
+<base href="http://<?php echo $_SERVER['HTTP_HOST'].$this->baseUrl()?>/" />
+<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+	<link  href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link  href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link  href="css/sticky.css" rel="stylesheet" type="text/css"/> 
+	<link  href="css/menu.css" rel="stylesheet" type="text/css"/>	
+	<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+	<link rel="stylesheet" type="text/css" href="css/skin.css" />
+	<link rel="stylesheet" type="text/css" href="css/uniform.default.css" />
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>	
+	<script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+	<script language="javascript" type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="highslide/highslide-with-gallery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>	
+	<script type="text/javascript" src="js/javascript.php"></script>
+<script type="text/javascript">
+ $(document).ready( function(){	
+
+		$obj = $('#lofslidecontent45').lofJSidernews( { interval : 4000,
+			easing			: 'easeInOutQuad',
+			duration		: 1600,
+			auto		 	: true,
+			maxItemDisplay  : 3,
+			startItem:0,
+			navPosition     : 'horizontal', // horizontal
+			navigatorHeight : 15,
+			navigatorWidth  : 25,
+			mainWidth:980} );	
+	});
+</script>
+<script type="text/javascript">
+	 $(document).ready( function(){	
+			
+			//Default Action
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.tabs li").click(function() {
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active contentd
+				return false;
+			});	
+			//SLIDE
+			//$('.slideshow').cycle({
+				//fx: 'fade',// choose your transition type, ex: fade, scrollUp, shuffle, etc...
+				//timeout: 5000
+			//});
+		});
+	</script>
+	<script type="text/javascript">
+		hs.graphicsDir = 'highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';
+		hs.fadeInOut = true;
+		//hs.dimmingOpacity = 0.75;
+
+		// Add the controlbar
+		hs.addSlideshow({
+			//slideshowGroup: 'group1',
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			fixedControls: 'fit',
+			overlayOptions: {
+				opacity: 0.75,
+				position: 'bottom center',
+				hideOnMouseOut: true
+			}
+		});
+		</script>
+<!--[if lte IE 7]>
+     <link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
+<![endif]-->
+ <link rel="canonical" href="http://<?php echo $_SERVER['HTTP_HOST'].$this->baseUrl().$this->url()?>" /> 
+</head>
+
+<body>
+
+<div id="page-wrapper" class="container_24">
+    <div id="page">
+    	<div id="header">
+            <a href="#" class="logo">logo</a>
+			<div class="slogan"><img src="images/slogan.png" alt=""/></div>	
+			
+					
+			<!-- MAIN CONTENT --> 
+				<div id="slideshow">
+					<div class="slideshow">
+						<?php $Banner = Banner::getDataNotPage(); foreach ($Banner as $banner):?>
+							<a href="<?php echo $banner->link;?>"><img src="<?php echo $banner->getThumbImage();?>" title="<?php echo $banner->name;?>" ></a>
+						<?php break; endforeach;?>	
+					</div>
+				</div>
+				<!-- END MAIN CONTENT --> 
+			</div><!--End .lofslidecontent45-->
+			<div class="mainNav">					
+				<div id="menu">
+					<ul class="menu">
+						<li <?php if($this->url()== "/"){ echo "class='current'";}?>><a href="/" class="parent"><span>Trang chủ</span></a></li>
+						<li <?php if($this->url()== "/content/index/id/1"){ echo "class='current'";}?>><a href="/content/index/id/1" class="parent"><span>Giới Thiệu</span></a></li>
+						<li <?php if($this->url()== "/news/index/group/23"){ echo "class='current'";}?>><a href="/news/index/group/23" class="parent"><span>Thuế nhập khẩu ô tô</span></a></li>
+						<li <?php if($this->url()== "/color"){ echo "class='current'";}?>><a href="/color/index/"><span>Màu xe BMW phong thủy</span></a></li>
+						<li <?php if($this->url()== "/content/index/id/20"){ echo "class='current'";}?>><a href="/content/index/id/20" class="parent"><span>Hỗ trợ tài chính</span></a></li>
+						<li <?php if($this->url()== "/news/index/group/20"){ echo "class='current'";}?>><a href="news/index/group/20"><span>Khuyến mãi BMW</span></a></li>
+						<li <?php if($this->url()== "/news/index/group/28"){ echo "class='current'";}?>><a href="news/index/group/28"><span>Mua bán xe BMW cũ</span></a></li>						
+					</ul><!--End .menu-->
+					<?php echo My_Plugin_Libs::getSplash()?>
+				</div><!--End #menu -->				
+			</div><!--End .mainNav-->
+    	</div><!--End #header-->
+    	<div id="main-wrapper" class="clearfix">
+    		<div class="main">
+                <div id="sidebar-first" class="column sidebar">
+                    <?php echo $this->partial("index/rightmenu.phtml")?>
+                    <?php echo $this->partial("index/leftblock.phtml")?>
+                </div><!--End #sidebar-first-->
+                <div id="content" class="column">
+                	<?php if($this->url() != "/"){ ?>
+                	<div class="breadcumb">
+					<a href="/">Trang chủ </a><img src="images/arrow3.png" alt="" />
+					<a href="<?php echo $this->url();?>"><?php echo $this->Title;?></a>
+					</div>
+					<?php }?>
+                	
+                    <?php echo $this->layout()->content;?>
+                </div><!--End #content-->
+                <div id="sidebar-second" class="column sidebar">
+                	<div class="block category">
+                        <h2 class="title"><img src="images/category.png" alt="" />TÌM KIẾM SẢN PHẨM</h2>
+                        <div class="support">
+							<div class="support_items">
+							<form action="/search" method="post">
+                       			<input id="textSearch" name="textSearch" class="text" type="text" />
+                        		<?php $group = ProductGroup::getOption(); echo $this->formSelect('id_group_product',$_REQUEST['id_group_product'],array("class"=>"select"),$group)?>
+                        		<br></br>
+                        		<div style="-moz-user-select: none;" id="uniform-undefined" class="button"><span><input type="submit" style="opacity: 0;" value="Tìm kiếm">Tìm kiếm</span></div>
+                       		</form>
+							</div>
+						</div>
+                    </div>
+                    <div class="block category">
+                        <h2 class="title"><img src="images/category.png" alt="" />Hỗ trợ trực tuyến</h2>
+                        <div class="support">
+							<div class="support_items">
+								<a href="ymsgr:sendim?<?php echo Zend_Registry::get ( 'Setting' )->Yahoo_nick1?>"><img src=" http://opi.yahoo.com/online?u=ea_ly.do&amp;m=g&amp;t=2&amp;l=us" border="0"/></a>
+								<span>Tư vấn bán hàng</span>
+								<span><?php echo Zend_Registry::get ( 'Setting' )->Phone1?></span>
+							</div>
+							<div class="support_items">
+								<a href="ymsgr:sendim?<?php echo Zend_Registry::get ( 'Setting' )->Yahoo_nick2?>"><img src=" http://opi.yahoo.com/online?u=ea_ly.do&amp;m=g&amp;t=2&amp;l=us" border="0"/></a>
+								<span>Tư vấn bán hàng</span>
+								<span><?php echo Zend_Registry::get ( 'Setting' )->Phone2?></span>
+							</div>
+							<div class="support_items">
+								<a href="ymsgr:sendim?<?php echo Zend_Registry::get ( 'Setting' )->Yahoo_nick3?>"><img src=" http://opi.yahoo.com/online?u=ea_ly.do&amp;m=g&amp;t=2&amp;l=us" border="0"/></a>
+								<span>Tư vấn kỹ thuật</span>
+								<span><?php echo Zend_Registry::get ( 'Setting' )->Phone3?></span>
+							</div>
+						</div>
+                    </div>
+                    <?php echo $this->partial("index/rightblock.phtml")?>
+                </div><!--End #sidebar-first-->
+    		</div><!--End .main-->
+    	</div><!--End #main-wrapper-->
+    	<div class="clear"></div>
+    	<div id="footer">
+    	<?php echo Zend_Registry::get ( 'Setting' )->FOOTER?>
+    	</div><!--End #footer-->
+    </div><!--End #pages-->	
+</div><!--End #pages--> 
+<div id="copyright"></div>
+</body>
+</html>

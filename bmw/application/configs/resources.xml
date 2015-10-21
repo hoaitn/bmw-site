@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<admin>			
+		<news name="Tin tức">
+			<role code="index" name="Danh sách tin tức" />
+			<role code="create" name="Thêm mới tin tức" />
+			<role code="edit" name="Sửa chữa tin tức" />
+			<role code="delete" name="Xóa tin tức" />
+		</news>	
+		<video name="Video">
+			<role code="index" name="Danh sách video" />
+			<role code="create" name="Thêm mới video" />
+			<role code="edit" name="Sửa chữa video" />
+			<role code="delete" name="Xóa video" />
+		</video>
+		<banner name="Quảng cáo">
+			<role code="index" name="Danh sách quảng cáo" />
+			<role code="create" name="Thêm mới quảng cáo" />
+			<role code="edit" name="Sửa chữa quảng cáo" />
+			<role code="delete" name="Xóa quảng cáo" />
+		</banner>
+		<newgroup name="Nhóm tin">
+			<role code="index" name="Danh sách nhóm tin" />
+			<role code="create" name="Thêm mới nhóm tin" />
+			<role code="edit" name="Sửa chữa nhóm tin" />
+			<role code="delete" name="Xóa màu nhóm tin" />
+		</newgroup>
+		<color name="Màu xe - phong thủy">
+			<role code="index" name="Danh sách màu sắc xe" />
+			<role code="create" name="Thêm mới màu sắc xe" />
+			<role code="edit" name="Sửa chữa màu sắc xe" />
+			<role code="delete" name="Xóa màu sắc xe" />
+		</color>
+		<setions name="Danh mục">
+			<role code="index" name="Danh sách danh mục" />
+			<role code="create" name="Thêm mới danh mục" />
+			<role code="edit" name="Sửa chữa danh mục" />
+			<role code="delete" name="Xóa danh mục" />
+		</setions>
+		<productgroup name="Nhóm sản phẩm">
+			<role code="index" name="Danh sách nhóm" />
+			<role code="create" name="Thêm mới nhóm" />
+			<role code="edit" name="Sửa chữa nhóm" />
+			<role code="delete" name="Xóa nhóm" />
+		</productgroup>
+		<product name="Sản phẩm">
+			<role code="index" name="Danh sách sản phẩm" />
+			<role code="create" name="Thêm mới sản phẩm" />
+			<role code="edit" name="Sửa chữa sản phẩm" />
+			<role code="delete" name="Xóa sản phẩm" />
+			<role code="uploadFile" name="Upload gallery" />
+		</product>		
+		<content name="Bài viết">
+			<role code="index" name="Danh sách bài viết" />
+			<role code="create" name="Thêm mới bài viết" />
+			<role code="edit" name="Sửa chữa bài viết" />
+			<role code="delete" name="Xóa bài viết" />
+		</content>		
+		<contact name="Đặt hàng">
+			<role code="index" name="Danh sách đặt hàng" />
+			<role code="view" name="Chi tiết" />	
+			<role code="delete" name="Xóa đặt hàng" />			
+		</contact>		
+		<group name="group">
+			<role code="index" name="Danh sách nhóm thành viên" />
+			<role code="create" name="Thêm nhóm thành viên" />
+			<role code="edit" name="Sửa nhóm thành viên" />
+			<role code="delete" name="Xóa nhóm thành viên" />
+		</group>		
+		
+		<index name="index">
+			<role code="index" name="Trang chủ quản trị" />
+		</index>
+		<member name="member">
+			<role code="index" name="Danh sách thành viên" />
+			<role code="create" name="Thêm mới thành viên" />
+			<role code="edit" name="Sửa thành viên" />
+			<role code="history" name="Lịch trình thao tác" />
+			<role code="export" name="Export nhật ký hoạt động" />
+			<role code="delete" name="Xóa thành viên" />
+			<role code="my" name="Xem thông tin cá nhân" />
+			<role code="profile" name="Sửa thông tin cá nhân" />			
+		</member>
+		<settings name="settings">
+			<role code="index" name="Cài đặt cấu hình" />			
+			<role code="home" name="Cài đặt nội dung trang chủ" />
+			<role code="footer" name="Cài đặt phụ đề" />			
+		</settings>
+		
+	</admin>
+</resources>

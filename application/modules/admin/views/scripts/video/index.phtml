@@ -1,0 +1,30 @@
+<div class="hastable">
+<div id="qlqg" style="padding-bottom: 10px;">
+<a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'video','action'=>'create'))?>">Thêm video</a>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" class="tbl_list">
+	<tbody>
+		<thead>
+			<th>Tên video</th>
+			<th>Video</th>			
+			<th>Sửa</th>
+			<th>Xóa</th>
+		</thead>
+		<?php foreach($this->Video as $Video):?>
+		<tr class="<?php ++$i; echo($i%2)?'first':'second'?>">
+			<td align="center"><?php echo $Video->name;?></td>				
+			<td align="center"><?php echo $Video->link;?></td>				
+			<td width="30"><a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'video','action'=>'edit','id'=>$Video->id))?>"><span class="ui-icon ui-icon-wrench"></span></a></td>
+			<td width="30"><a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'video','action'=>'delete','id'=>$Video->id))?>"><span class="ui-icon ui-icon-circle-close"></span></a></td>
+		</tr>
+		<?php endforeach;?>
+	</tbody>
+</table>
+
+<div class="paging"><?php echo $this->Pagination($this->Pager,$this->url().'?page={%page}')?></div>
+</div>
+<div id="dialog-Review-view" title="Review detail">
+<form>
+<div id="dialog-Review-view_inner"></div>
+</form>
+</div>

@@ -1,0 +1,38 @@
+<?php if($this->error):?>
+<div class="ui-widget">
+<div class="ui-state-error ui-corner-all" style="padding: .7em;">
+<p><span class="ui-icon ui-icon-alert"
+	style="float: left; margin-right: .3em;"></span> <strong>Error message:</strong><br />
+<div style="padding-left: 20px">
+				<?php foreach($this->error as $error){echo '- '.$error.'<br/>';}?>
+				</div>
+</p>
+</div>
+</div>
+<?php endif;?>
+
+<div id="tabs">
+<ul>
+	<li><a href="#tabs-1">Thông tin bài viết</a></li>	
+</ul>
+<form action="" method="post">
+<div id="tabs-1" class="hastable">
+<table>
+	<tr>
+		<td width="130"><span style="color:#CC0000;">*</span>Tiêu đề</td>
+		<td><?php echo $this->formText('name',$_REQUEST['name'],array('size'=>60 ))?></td>
+	</tr>
+	<tr>
+		<td width="130">Danh mục</td>
+		<td><?php $setions = Setions::getOption(); echo $this->formSelect('setions_id',$_REQUEST['setions_id'],null,$setions)?> </td>
+	</tr>
+	<tr>
+		<td width="130">Trạng thái</td>
+		<td><?php $status = array("1"=>"Yes","0"=>"No"); echo $this->formSelect('status',$_REQUEST['status'],null,$status)?> </td>
+	</tr>		
+</table>
+</div>
+<input type="submit" value="Lưu lại" class="ui-button ui-widget ui-state-default ui-corner-all"/>
+<input type="button" value="Quay lại" onclick="javascript:history.back();" />
+</form>
+</div>

@@ -1,0 +1,9 @@
+ul#cssmenu1 ul li {
+	font-weight: normal;
+	background: #2b7315;
+	color: #fff;
+	border-bottom: 1px solid #3e9623;
+	float: none;
+	display:inline;
+	width:100%
+}

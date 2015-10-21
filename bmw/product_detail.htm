@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="datlt2306" />
+
+	<title>Untitled 1</title>
+	<link  href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link  href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link  href="css/sticky.css" rel="stylesheet" type="text/css"/> 
+	<link  href="css/menu.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+	<link rel="stylesheet" type="text/css" href="css/skin.css" />
+	<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+	<script src="js/sticky.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery.easing.js"></script>
+	<script language="javascript" type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="highslide/highslide-with-gallery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript">
+	 $(document).ready( function(){	
+			$obj = $('#lofslidecontent45').lofJSidernews( { interval : 4000,
+				easing			: 'easeInOutQuad',
+				duration		: 1200,
+				auto		 	: false,
+				maxItemDisplay  : 3,
+				startItem:0,
+				navPosition     : 'horizontal', // horizontal
+				navigatorHeight : 15,
+				navigatorWidth  : 25,
+				mainWidth:980} );
+			//Default Action
+			$(".tab_content").hide(); //Hide all content
+			$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+			$(".tab_content:first").show(); //Show first tab content
+			
+			//On Click Event
+			$("ul.tabs li").click(function() {
+				$("ul.tabs li").removeClass("active"); //Remove any "active" class
+				$(this).addClass("active"); //Add "active" class to selected tab
+				$(".tab_content").hide(); //Hide all tab content
+				var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+				$(activeTab).fadeIn(); //Fade in the active contentd
+				return false;
+			});	
+			//SLIDE
+			jQuery('#mycarousel').jcarousel();
+		});
+	</script>
+	<script type="text/javascript">
+		hs.graphicsDir = 'highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';
+		hs.fadeInOut = true;
+		//hs.dimmingOpacity = 0.75;
+
+		// Add the controlbar
+		hs.addSlideshow({
+			//slideshowGroup: 'group1',
+			interval: 5000,
+			repeat: false,
+			useControls: true,
+			fixedControls: 'fit',
+			overlayOptions: {
+				opacity: 0.75,
+				position: 'bottom center',
+				hideOnMouseOut: true
+			}
+		});
+		</script>
+</head>
+
+<body>
+
+<div id="page-wrapper" class="container_24">
+    <div id="page">
+    	<div id="header">
+            <a href="#" class="logo">logo</a>
+			<div class="slogan"><img src="images/slogan.png" alt=""/></div>
+			<div id="lofslidecontent45" class="lof-slidecontent" style="width:980px; height:340px;">
+			<!-- MAIN CONTENT --> 
+				<div class="lof-main-outer" style="width:980px; height:340px;">
+					<ul class="lof-main-wapper">
+						<li>
+							<img src="images/banner/banner1.jpg" title="Newsflash 2" >           
+							<div class="lof-main-item-desc">
+								<h3><i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 1</h2>
+								<p>The one thing about a Web site, it always changes! Joomla! makes it easy to add Articles, content,...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li> 
+						<li>
+							<img src="images/banner/banner2.jpg" title="Newsflash 1" >           
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 2" href="#Category-2">/ Newsflash 2 /</a> 	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 2</h2>
+								<p>Joomla! makes it easy to launch a Web site of any kind. Whether you want a brochure site or you are...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li> 
+						<li>
+							<img src="images/banner/banner3.jpg" title="Newsflash 3" >            
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 3" href="#Category-3">/ Newsflash 3 /</a> 	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 3</h2>
+								<p>With a library of thousands of free Extensions, you can add what you need as your site grows. Don't...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li> 
+						<li>
+							<img src="images/banner/banner4.jpg" title="Newsflash 5" >            
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 4" href="#Category-4">/ Newsflash 4 /</a>	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 4</h2>
+								<p>Joomla! 1.5 - 'Experience the Freedom'!. It has never been easier to create your own dynamic Web...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li>
+						<li>
+							<img src="images/banner/banner5.jpg" title="Newsflash 5" >            
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 5" href="#">/ Newsflash 5 /</a>	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 5</h2>
+								<p>Joomla! 1.5 - 'Experience the Freedom'!. It has never been easier to create your own dynamic Web...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li> 
+						<li>
+							<img src="images/banner/banner6.jpg" title="Newsflash 5" >            
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 6" href="#">/ Newsflash 6 /</a>	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 6</h2>
+								<p>Joomla! 1.5 - 'Experience the Freedom'!. It has never been easier to create your own dynamic Web...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li> 
+						<li>
+							<img src="images/banner/banner7.jpg" title="Newsflash 5" >            
+							<div class="lof-main-item-desc">
+								<h3><a target="_parent" title="Newsflash 7" href="#">/ Newsflash 7 /</a>	<i> — Monday, February 15, 2010 12:42</i></h3>
+								<h2>Content of Newsflash 7</h2>
+								<p>Joomla! 1.5 - 'Experience the Freedom'!. It has never been easier to create your own dynamic Web...<a class="readmore" href="#">Read more </a></p>
+							</div>
+						</li>
+					</ul>  	
+				</div>
+				<!-- END MAIN CONTENT -->  
+				<!-- NAVIGATOR -->	
+				<div class="lof-navigator-wapper">
+					  <div class="lof-navigator-outer">
+							<ul class="lof-navigator">
+							   <li><span>1</span></li>
+							   <li><span>2</span></li>
+							   <li><span>3</span></li>
+							   <li><span>4</span></li>    
+							   <li><span>5</span></li>
+							   <li><span>6</span></li>       
+							   <li><span>7</span></li>       
+							   <li><span>8</span></li>       		
+							</ul>
+					  </div>
+				</div><!--End .lof-navigator-wapper-->
+				<!----------------- --------------------->
+			</div><!--End .lofslidecontent45-->
+			<div class="mainNav">
+				<div id="menu">
+					<ul class="menu">
+						<li><a href="#" class="parent"><span>Trang chủ</span></a>
+							<div><ul>
+								<li><a href="#" class="parent"><span>Sub Item 1</span></a>
+									<div><ul>
+										<li><a href="#" class="parent"><span>Sub Item 1.1</span></a>
+											<div><ul>
+												<li><a href="#"><span>Sub Item 1.1.1</span></a></li>
+												<li><a href="#"><span>Sub Item 1.1.2</span></a></li>
+											</ul></div>
+										</li>
+										<li><a href="#"><span>Sub Item 1.2</span></a></li>
+										<li><a href="#"><span>Sub Item 1.3</span></a></li>
+										<li><a href="#"><span>Sub Item 1.4</span></a></li>
+										<li><a href="#"><span>Sub Item 1.5</span></a></li>
+										<li><a href="#"><span>Sub Item 1.6</span></a></li>
+										<li><a href="#" class="parent"><span>Sub Item 1.7</span></a>
+											<div><ul>
+												<li><a href="#"><span>Sub Item 1.7.1</span></a></li>
+												<li><a href="#"><span>Sub Item 1.7.2</span></a></li>
+											</ul></div>
+										</li>
+									</ul></div>
+								</li>
+								<li><a href="#"><span>Sub Item 2</span></a></li>
+								<li><a href="#"><span>Sub Item 3</span></a></li>
+							</ul></div>
+						</li>
+						<li><a href="#" class="parent"><span>Giới Thiệu</span></a>
+							<div><ul>
+								<li><a href="#" class="parent"><span>Sub Item 1</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 1.1</span></a></li>
+										<li><a href="#"><span>Sub Item 1.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#" class="parent"><span>Sub Item 2</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 2.1</span></a></li>
+										<li><a href="#"><span>Sub Item 2.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#"><span>Sub Item 3</span></a></li>
+								<li><a href="#"><span>Sub Item 4</span></a></li>
+								<li><a href="#"><span>Sub Item 5</span></a></li>
+								<li><a href="#"><span>Sub Item 6</span></a></li>
+								<li><a href="#"><span>Sub Item 7</span></a></li>
+							</ul></div>
+						</li>
+						<li><a href="#"><span>Màu xe BMW phong thủy</span></a></li>
+						<li><a href="#" class="parent"><span>Giới Thiệu</span></a>
+							<div><ul>
+								<li><a href="#" class="parent"><span>Sub Item 1</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 1.1</span></a></li>
+										<li><a href="#"><span>Sub Item 1.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#" class="parent"><span>Sub Item 2</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 2.1</span></a></li>
+										<li><a href="#"><span>Sub Item 2.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#"><span>Sub Item 3</span></a></li>
+								<li><a href="#"><span>Sub Item 4</span></a></li>
+								<li><a href="#"><span>Sub Item 5</span></a></li>
+								<li><a href="#"><span>Sub Item 6</span></a></li>
+								<li><a href="#"><span>Sub Item 7</span></a></li>
+							</ul></div>
+						</li>
+						<li><a href="#" class="parent"><span>Hỗ trợ tài chính</span></a>
+							<div><ul>
+								<li><a href="#" class="parent"><span>Sub Item 1</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 1.1</span></a></li>
+										<li><a href="#"><span>Sub Item 1.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#" class="parent"><span>Sub Item 2</span></a>
+									<div><ul>
+										<li><a href="#"><span>Sub Item 2.1</span></a></li>
+										<li><a href="#"><span>Sub Item 2.2</span></a></li>
+									</ul></div>
+								</li>
+								<li><a href="#"><span>Sub Item 3</span></a></li>
+								<li><a href="#"><span>Sub Item 4</span></a></li>
+								<li><a href="#"><span>Sub Item 5</span></a></li>
+								<li><a href="#"><span>Sub Item 6</span></a></li>
+								<li><a href="#"><span>Sub Item 7</span></a></li>
+							</ul></div>
+						</li>
+						<li><a href="#"><span>Khuyến mãi BMW</span></a></li>
+						<li class="last"><a href="#"><span>Contacts</span></a></li>
+					</ul><!--End .menu-->
+				</div><!--End #menu -->
+			</div><!--End .mainNav-->
+    	</div><!--End #header-->
+    	<div id="main-wrapper" class="clearfix">
+    		<div class="main">
+                <div id="sidebar-first" class="column sidebar">
+                    <div class="block category">
+                        <h2 class="title"><img src="images/category.png" alt="" />Danh mục sản phẩm</h2>
+                        <ul>
+                        	<li><a href="#" title="">BMW</a>
+								<ul> 
+									<li><a href="#">Tác giả A</a></li> 
+									<li><a href="#">Tác giả B</a></li> 
+									<li><a href="#">Tác giả C</a></li> 
+								</ul>
+							</li>
+                            <li><a href="#" title="">BMW</a></li>
+                            <li><a href="#" title="">BMW</a></li>
+                            <li><a href="#" title="">BMW</a></li>
+                            <li><a href="#" title="">BMW</a></li>
+                        </ul>
+                    </div>
+                    <div class="block other">
+                        <h2 class="title"><img src="images/guide.png" alt="" /><a>Những thứ cần mang theo khi đi dã ngoại</a></h2>
+                        <ul>
+                        	<li><a href="#" title="">Đồ Dùng cá nhân</a></li>
+                            <li><a href="#" title="">Đại sứ quán nước ngoài tại Việt Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/support.png" alt="" />Hỗ trợ mua xe</h2>
+                        <ul>
+                        	<li><a href="#" title="">Chọn màu xe theo phong thủy</a></li>
+                            <li><a href="#" title="">Khuyến mại của BMW</a></li>
+                            <li><a href="#" title="">Mua xe trả góp</a></li>
+                            <li><a href="#" title="">Mua xe giá CIF</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/news.png" alt="" />Tin tức Ô tô BMW</h2>
+                        <ul>
+                        	<li><a href="#" title="">Thuế nhập khẩu Ô tô</a></li>
+                            <li><a href="#" title="">Ô tô BMW</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/tour.png" alt="" />Điểm đến du lịch</h2>
+                        <ul>
+                        	<li><a href="#" title="">Miền Bắc</a></li>
+                            <li><a href="#" title="">Miền Trung</a></li>
+                            <li><a href="#" title="">Miền Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/gallery.png" alt="" />Hình ảnh</h2>
+                        <ul>
+                        	<li><a href="#" title="">Mi?n B?c</a></li>
+                            <li><a href="#" title="">Mi?n Trung</a></li>
+                            <li><a href="#" title="">Mi?n Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/statistics.png" alt="" />Thống kê</h2>
+                        <ul>
+                        	<li><a href="#" title="">Mi?n B?c</a></li>
+                            <li><a href="#" title="">Mi?n Trung</a></li>
+                            <li><a href="#" title="">Mi?n Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                </div><!--End #sidebar-first-->
+                <div id="content" class="column">
+					<div class="breadcumb">
+						<a href="#">Trang chủ </a><img src="images/arrow3.png" alt="" />
+						<a href="#">Trang chủ </a><img src="images/arrow3.png" alt="" />
+						<a href="#">Trang chủ </a>
+					</div>
+					<div class="block_content">
+						<div class="highslide-gallery">
+							<a href="upload/gallery1.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery1.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the first image. This caption can be styled using CSS.
+							</div>
+
+
+							<!-- Repetionion of the above -->
+							<a href="upload/gallery2.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery2.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the second image.
+							</div>
+
+							<a href="upload/gallery3.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery3.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the third image.
+							</div>
+							
+							<a href="upload/gallery1.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery1.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the first image. This caption can be styled using CSS.
+							</div>
+
+
+							<!-- Repetionion of the above -->
+							<a href="upload/gallery2.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery2.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the second image.
+							</div>
+
+							<a href="upload/gallery3.jpg" class="highslide" onclick="return hs.expand(this)">
+								<img src="upload/gallery3.thumb.jpg" alt="Highslide JS"
+									title="Click to enlarge" />
+							</a>
+							<div class="highslide-caption">
+								Caption for the third image.
+							</div>
+							<div class="click">Click vào để xem ảnh to</div>
+						</div>
+						<div class="info_product">
+							<h2>BMW X6 xDrive35d</h2>
+							<ul>
+								<li><b>Hãng sản xuất :</b> BMW - X6</li>
+								<li><b>Dung tích xi lanh (cc) :</b>2993cc</li>
+								<li><b>Loại xe :</b>SUV</li>
+								<li><b>Hộp số :</b>6 số tự động</li>
+								<li><b>Số chỗ ngồi :</b>5chỗ</li>
+								<li><b>Giá tiền :</b>40000000</li>
+							</ul>
+							<a href="#" class="product_items_buy">Đặt mua</a>
+						</div>
+						<div class="clear"></div>
+						<div class="container">
+							<ul class="tabs">
+								<li><a href="#tab1">Động cơ</a></li>
+								<li><a href="#tab2">Options theo xe</a></li>
+								<li><a href="#tab3">Options vùng</a></li>
+								<li><a href="#tab4">Options lựa chọn</a></li>
+							</ul>
+							<div class="tab_container">
+								<div id="tab1" class="tab_content">
+									tab1
+								</div>
+								<div id="tab2" class="tab_content">
+									tab2
+								</div>
+								<div id="tab3" class="tab_content">
+									tab3
+								</div>
+								<div id="tab4" class="tab_content">
+									 <div class="box_product">
+										<img src="images/product5.png" />
+										<span>Josie Maran</span>
+										<span>My Favorite Lips,<b>$35</b></span>
+									</div>
+									<div class="box_product">
+										<img src="images/product3.png" />
+										<span>Ojion Shine and Protect</span>
+										<span>Hair Ritual Kit<b>$50</b></span>
+									</div>
+									
+									<div class="box_product">
+										<img src="images/product.png" />
+										<span>perfectly Amazing</span>
+										<span>($107 Value)<b>$57</b></span>
+									</div>
+									
+									<div class="box_product">
+										<img src="images/product2.png" />
+										<span>LAVANILA The Healthy</span>
+										<span>Body Butter Trio,<b>$30</b></span>
+									</div>
+									<div class="box_product">
+										<img src="images/product1.png" />
+										<span>Philosophy Amazing Grace</span>
+										<span>Amazingly Clean Set<b>$57</b></span>
+									</div>
+									<div class="box_product">
+										<img src="images/product4.png" />
+										<span>Base Escentuals</span>
+										<span>Get Started Eyes,<b>$49</b></span>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div><!--End .tab_container-->
+						</div><!--End .container-->
+						<div class="clear"></div>
+						<div class="product_other">
+							<h2>Sản phẩm khác</h2>
+							<div class="clear"></div>
+						</div>
+					</div><!--End .block_content-->
+                </div><!--End #content-->
+				<div id="sidebar-second" class="column sidebar">
+                    <div class="block category">
+                        <h2 class="title"><img src="images/category.png" alt="" />Hỗ trợ trực tuyến</h2>
+                        <div class="support">
+							<div class="support_items">
+								<a href="#"><img src="images/online.gif" alt=""/></a>
+								<span>Tư vấn bán hàng</span>
+								<span>0913002615, 0932235678</span>
+							</div>
+							<div class="support_items">
+								<a href="#"><img src="images/online.gif" alt=""/></a>
+								<span>Tư vấn bán hàng</span>
+								<span>0913002615, 0932235678</span>
+							</div>
+						</div>
+                    </div>
+                    <div class="block other">
+                        <h2 class="title"><img src="images/friend.png" alt="" />Anh em BMW</h2>
+                        <ul>
+                        	<li><a href="#" title="">Chọn màu xe theo phong thủy</a></li>
+                            <li><a href="#" title="">Khuyến mại của BMW</a></li>
+                            <li><a href="#" title="">Mua xe trả góp</a></li>
+                            <li><a href="#" title="">Mua xe giá CIF</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/support.png" alt="" />Hỗ trợ mua xe</h2>
+                        <ul>
+                        	<li><a href="#" title="">Chọn màu xe theo phong thủy</a></li>
+                            <li><a href="#" title="">Khuyến mại của BMW</a></li>
+                            <li><a href="#" title="">Mua xe trả góp</a></li>
+                            <li><a href="#" title="">Mua xe giá CIF</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/history.png" alt="" />Lịch sử BMW</h2>
+                        <ul>
+                        	<li><a href="#" title="">Thuế nhập khẩu Ô tô</a></li>
+                            <li><a href="#" title="">Ô tô BMW</a></li>
+                        </ul>
+                    </div><!--End .block-->
+					<div class="block other">
+                        <h2 class="title"><img src="images/drive.png" alt="" /><a>Kỹ thuật lái xe</a></h2>
+                        <ul>
+                        	<li><a href="#" title="">Đồ Dùng cá nhân</a></li>
+                            <li><a href="#" title="">Đại sứ quán nước ngoài tại Việt Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/funny.png" alt="" />Thư giãn BMW</h2>
+                        <ul>
+                        	<li><a href="#" title="">Miền Bắc</a></li>
+                            <li><a href="#" title="">Miền Trung</a></li>
+                            <li><a href="#" title="">Miền Nam</a></li>
+                        </ul>
+                    </div><!--End .block-->
+                    <div class="block other">
+                        <h2 class="title"><img src="images/adv.png" alt="" />Quảng cáo</h2>
+                        
+                    </div><!--End .block-->
+                </div><!--End #sidebar-first-->
+    		</div><!--End .main-->
+    	</div><!--End #main-wrapper-->
+    	<div class="clear"></div>
+    	
+    </div><!--End #pages-->	
+</div><!--End #pages-->
+<div id="footer">
+	<div class="innerFooter">
+		6544
+	</div>
+</div><!--End #footer-->
+ 
+<div id="copyright">Copyright &copy; 2011 <a href="http://apycom.com/">Apycom jQuery Menus</a></div>
+</body>
+</html>

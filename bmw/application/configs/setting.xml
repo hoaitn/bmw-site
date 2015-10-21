@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+					<setting>
+<DOMAIN><![CDATA[bmw.local]]></DOMAIN>
+<WEBSITE_NAME><![CDATA[Mua Bán Xe BMW]]></WEBSITE_NAME>
+<FOOTER><![CDATA[
+<p>Bản quyền thuộc về : otoduc.vn &amp; bmwduc.vn Copyright &copy; 2011</p>
+]]></FOOTER>
+<GOOGLE_API_KEY><![CDATA[ABQIAAAAUge50bQ6RADMvUDY-nbmdhQTY77iyKAuTrJwXNQRQnhL18TqNxTPZhhw8Zq7fdvxDsEUXaxw-Mt5hA]]></GOOGLE_API_KEY>
+<default_time_format><![CDATA[d/m/Y]]></default_time_format>
+<default_time_format_long><![CDATA[d/m/Y H:i]]></default_time_format_long>
+<EMAIL_SMTP_HOST><![CDATA[]]></EMAIL_SMTP_HOST>
+<EMAIL_SMTP_USER><![CDATA[]]></EMAIL_SMTP_USER>
+<EMAIL_SMTP_PASS><![CDATA[]]></EMAIL_SMTP_PASS>
+<EMAIL_SMTP_PORT><![CDATA[]]></EMAIL_SMTP_PORT>
+<EMAIL_SMTP_SSL><![CDATA[]]></EMAIL_SMTP_SSL>
+<webmaster_email><![CDATA[cuong.pham@bmw.vn]]></webmaster_email>
+<TITLE><![CDATA[Xe BMW ]]></TITLE>
+<KEYWORD><![CDATA[BMW,XE BMW,MUA BAN XE]]></KEYWORD>
+<DESCRIPTION><![CDATA[Trang web mua bán xe BMW trực tuyến]]></DESCRIPTION>
+<Yahoo_nick1><![CDATA[phamcuongbmw]]></Yahoo_nick1>
+<Phone1><![CDATA[0902 178 229 - 094 626 0000]]></Phone1>
+<Yahoo_nick2><![CDATA[phamcuongbmw]]></Yahoo_nick2>
+<Phone2><![CDATA[0902 178 229 - 094 626 0000]]></Phone2>
+<Yahoo_nick3><![CDATA[phamcuongbmw]]></Yahoo_nick3>
+<Phone3><![CDATA[0902 178 229 - 094 626 0000]]></Phone3>
+<Hotline><![CDATA[ 0902 178 229 - 094 626 0000]]></Hotline></setting>

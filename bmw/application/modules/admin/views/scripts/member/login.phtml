@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11">
+<html xml:lang="en" lang="en">
+<head>
+	<title>Control Panel</title>
+	<base href="http://<?php echo $_SERVER['HTTP_HOST'].$this->baseUrl()?>/" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="noindex, nofollow" />	
+	<link href="css/admin.css" rel="stylesheet" media="all" type="text/css" />
+</head>
+
+<body>
+	<div style="width:480px;margin:auto;">
+	<form action="" method="post" name="frmLogin" id="frmLogin">
+		<div id="login-box">
+			<H2>Administrstor - Panel</H2>
+			<br />
+			<br />
+			<div id="login-box-name" style="margin-top:20px;">User name</div>
+			<div id="login-box-field" style="margin-top:20px;">
+				<input style="width:175px;" name="username" id="username" class="Field150 form-login" title="Username" value="" size="30" maxlength="2048" />
+			</div>
+			<div id="login-box-name">Passwords</div>
+			<div id="login-box-field">
+				<input style="width:175px;" type="password" name="password" id="password" type="password" class="Field150 form-login" title="Password" value="" size="30" maxlength="2048" />
+			</div>
+			<br />
+			<!--<span class="login-box-options">
+				<input type="checkbox" name="1" value="1"> Remember Me <a href="<?php echo '/members/forgot'?>" style="margin-left:30px;">Forgot password?</a></span>-->
+			<br />
+			<br />
+			<input type="submit" name="SubmitButton" id="LoginSubmitButton" value="" class="FormButton">
+		</div>
+	</form>
+	</div>
+</body>
+</html>

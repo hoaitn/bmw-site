@@ -1,0 +1,27 @@
+<div class="hastable">
+<table cellspacing="0" cellpadding="0" width="100%" class="tbl_list">
+	<tbody>
+		<thead>
+			<th>Người đặt hàng</th>
+			<th>Ngày đặt hàng</th>
+			<th>Điện Thoại</th>
+			<th>Sản phẩm đặt mua</th>
+			<th>Chi tiết</th>
+			<th>Xóa</th>			
+		</thead>
+		<?php foreach($this->Contact as $Contact):?>
+		<tr class="<?php ++$i; echo($i%2)?'first':'second'?>">
+			<td><?php echo $Contact->full_name?></td>
+			<td><?php echo $Contact->created_date?></td>
+			<td><?php echo $Contact->phone?></td>
+			<td><?php echo $Contact->name_product?></td>					
+			<td width="30">
+				<a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'contact','action'=>'view','id'=>$Contact->id))?>">Xem</a>
+			</td>
+			<td width="30"><a class="btn_no_text btn ui-state-default ui-corner-all tooltip" href="<?php echo $this->url(array('controller'=>'contact','action'=>'delete','id'=>$Contact->id))?>"><span class="ui-icon ui-icon-circle-close"></span></a></td>			
+		</tr>
+		<?php endforeach;?>
+	</tbody>
+</table>
+<div class="paging"><?php echo $this->Pagination($this->Pager,$this->url().'?page={%page}')?></div>
+</div>

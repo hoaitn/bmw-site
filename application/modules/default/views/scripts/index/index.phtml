@@ -1,0 +1,36 @@
+<div class="block_cate" >
+	<h2 class="cate_product_title"><a href="/">Sản phẩm mới</a></h2>                       
+	<div class="cate_product"> 
+	<?php $counter = count($this->NewStatus); $i=0; $number_of_row = ceil($counter/3);?>     
+	 <?php foreach ($this->NewStatus as $newStatus):?> 
+	 <?php if($i%$number_of_row == 0){ $class = "last";}?>                 	
+		<div class="cate_product_items <?php echo $class;?>">
+			<h2 class="product_items_title"><a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$newStatus->id));?>"><?php echo $newStatus->product_name?></a></h2>
+			<div class="product_items_images">
+				<a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$newStatus->id));?>"><img src="<?php echo $newStatus->getThumbImage();?>" alt="<?php echo $newStatus->product_name?>" data-tooltip="sticky"/></a>
+			</div>
+			<span class="product_items_price"><?php echo number_format ($newStatus->product_price,0,".",",");?> VNĐ</span>
+			<a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$newStatus->id));?>" class="product_items_buy">Xem chi tiết</a>								
+		</div><!--End .cate_product_items-->  
+		<?php endforeach;?>
+		<div class="clear"></div>
+	</div><!--End .cate_product-->                        
+</div><!--End .block_cate-->
+<div class="block_cate" >
+	<h2 class="cate_product_title"><a href="/">Sản phẩm bán chạy</a></h2>                        
+	<div class="cate_product">
+	<?php $counter = count($this->SoldOut); $i=0; $number_of_row = ceil($counter/3);?> 
+	<?php foreach ($this->SoldOut as $sold):?>
+	 <?php if($i%$number_of_row == 0){ $class = "last";}?>
+		<div class="cate_product_items <?php echo $class;?>">
+			<h2 class="product_items_title"><a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$sold->id));?>"><?php echo $sold->product_name?></a></h2>
+			<div class="product_items_images">
+				<a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$sold->id));?>"><img src="<?php echo $sold->getThumbImage();?>" alt="<?php echo $sold->product_name?>" /></a>
+			</div>
+			<span class="product_items_price"><?php echo number_format ($sold->product_price,0,".",",");?> VNĐ</span>
+			<a href="<?php echo $this->url(array("controller"=>"product","action"=>"details","product_id"=>$sold->id));?>" class="product_items_buy">Xem chi tiết</a>
+		</div><!--End .cate_product_items-->
+	<?php endforeach;?>                             
+		<div class="clear"></div>
+	</div><!--End .cate_product-->
+</div><!--End .block_cate-->

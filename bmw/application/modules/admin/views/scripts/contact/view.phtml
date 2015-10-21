@@ -1,0 +1,48 @@
+<div class="hastable">
+<table>
+	<thead>
+		<tr>			
+			<td colspan="2">Thông tin khách hàng</td>
+		</tr>
+	</thead>
+	<tbody style="overflow: scroll !important; height: 227px;">
+		<tr>			
+			<td width="150">Họ và Tên</td>
+			<td><?php echo $this->Contact->full_name;?></td>
+		</tr>
+		<tr>			
+			<td>Địa chỉ</td>
+			<td><?php echo $this->Contact->address;?></td>
+		</tr>
+		<tr>			
+			<td>Email</td>
+			<td><?php echo $this->Contact->email;?></td>
+		</tr>
+		<tr>			
+			<td>Điện thoại</td>
+			<td><?php echo $this->Contact->phone;?></td>
+		</tr>
+		<tr>			
+			<td>Sản phẩm đặt mua</td>
+			<td><?php echo $this->Contact->name_product;?></td>
+		</tr>
+		<tr>			
+			<td>Ngày đặt mua</td>
+			<td><?php echo $this->Contact->created_date;?></td>
+		</tr>
+	</tbody>			
+</table>
+<table>
+	<thead>
+		<tr>			
+			<td>Nội dung yêu cầu</td>
+		</tr>
+	</thead>
+	<tbody style="overflow: scroll !important; height: 227px;">
+		<tr>			
+			<td><?php echo $this->Contact->mesage;?></td>
+		</tr>	
+	</tbody>
+</table>
+<input type="button" value="Quay lại" onclick="javascript:history.back();" />
+</div>
